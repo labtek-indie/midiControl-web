@@ -34,7 +34,22 @@ function LaunchpadToGrid(midiPort){
 
 // input grid container 
 var inputGrid = LaunchpadToGrid(launchpad)
-function drawTerminal(grid) {
+
+// cara menulis function JS 1
+// function drawTerminal(grid) {
+// 	var result = ''
+// 	for (var row = 0; row < grid.shape[0]; row++) {
+// 		for (var col = 0; col < grid.shape[1]; col++) {
+// 			result += (' ' + (grid.get(row,col) || 0)).slice(-3) + ' '
+// 		}
+// 		result += '\n'
+// 	}
+// 	console.log(result)
+// }
+// inputGrid(drawTerminal)
+
+// cara menulis function JS 2
+inputGrid((grid) => {
 	var result = ''
 	for (var row = 0; row < grid.shape[0]; row++) {
 		for (var col = 0; col < grid.shape[1]; col++) {
@@ -42,6 +57,5 @@ function drawTerminal(grid) {
 		}
 		result += '\n'
 	}
-	console.log(result)
-}
-inputGrid(drawTerminal)
+	console.log(result)	
+})

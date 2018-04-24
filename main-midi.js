@@ -17,7 +17,12 @@ launchpad.on('data', (data) => {
 	} 
 	else {
 		let x =  Math.floor(Math.random()*127)
-		launchpad.write([data[0], data[1], x])
+		launchpad.write([data[0], data[1], 127])
+		//around
+		launchpad.write([data[0], data[1] - 16, 10])
+		launchpad.write([data[0], data[1] + 16, 10])
+		launchpad.write([data[0], data[1] - 1, 10])
+		launchpad.write([data[0], data[1] + 1, 10])
 		// console.log("color ",x)
 	}
 		

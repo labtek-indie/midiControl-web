@@ -1,11 +1,7 @@
 # Midi Controller - Node
 research comm of midi controller (Novation Launchpad / Akai MPK Mini 2) to web using Node
 
-<br/>
-
 #### Documentation:
-<br/>
-
 [Novation Launchpad Programmers Guide](https://global.novationmusic.com/sites/default/files/novation/downloads/10529/launchpad-mk2-programmers-reference-guide_0.pdf)
 <br/>
 
